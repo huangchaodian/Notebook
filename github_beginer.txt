@@ -1,2 +1,13 @@
 http://www.eoeandroid.com/thread-274556-1-1.html
 http://blog.csdn.net/hcbbt/article/details/11651229
+安装msysgit
+ssh-keygen -t rsa -C "your_email@youremail.com"
+ssh -T git@github.com  
+git config --global user.name "your name"  
+git config --global user.email "your_email@youremail.com"  
+
+新仓库添加方法：
+git remote add origin git@github.com:yourName/yourRepo.git  
+git add README  
+git commit -m "first commit"  
+git push origin master 
