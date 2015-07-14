@@ -7,7 +7,11 @@ git config --global user.name "your name"
 git config --global user.email "your_email@youremail.com"  
 
 本地添加新仓库
-git remote add origin git@github.com:yourName/yourRepo.git  
+git remote add origin git@github.com:yourName/yourRepo.git//首次使用
 git add README  
 git commit -m "first commit"  
 git push origin master 
+
+远程恢复本地
+git pull origin master
+git checkout README
