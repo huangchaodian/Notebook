@@ -1,12 +1,12 @@
 http://www.eoeandroid.com/thread-274556-1-1.html
 http://blog.csdn.net/hcbbt/article/details/11651229
-°²×°msysgit
+å®‰è£…msysgit
 ssh-keygen -t rsa -C "your_email@youremail.com"
 ssh -T git@github.com  
 git config --global user.name "your name"  
 git config --global user.email "your_email@youremail.com"  
 
-ÐÂ²Ö¿âÌí¼Ó·½·¨£º
+æœ¬åœ°æ·»åŠ æ–°ä»“åº“
 git remote add origin git@github.com:yourName/yourRepo.git  
 git add README  
 git commit -m "first commit"  
