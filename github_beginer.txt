@@ -2,11 +2,15 @@ http://www.eoeandroid.com/thread-274556-1-1.html
 http://blog.csdn.net/hcbbt/article/details/11651229
 安装msysgit
 ssh-keygen -t rsa -C "your_email@youremail.com"
+
+ssh文件夹，进去，打开id_rsa.pub，复制里面的key。回到github，进入Account Settings，左边选择SSH Keys，Add SSH Key,title随便填，粘贴key。
+
 ssh -T git@github.com  
 git config --global user.name "your name"  
 git config --global user.email "your_email@youremail.com"  
 
 本地添加新仓库
+git init
 git remote add origin git@github.com:yourName/yourRepo.git//首次使用
 git add README  
 git commit -m "first commit"  
