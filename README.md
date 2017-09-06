@@ -36,6 +36,6 @@ xdebug.remote_port = 9000
 export XDEBUG_CONFIG="idekey=PHPSTORM"
 ```
 ### yar debug 
-transports/curl.c
-data->headers = curl_slist_append(data->headers, "User-Agent: PHP Yar Rpc-" PHP_YAR_VERSION);
-+ data->headers = curl_slist_append(data->headers, "Cookie: XDEBUG_SESSION=YAR;");
+    transports/curl.c
+    data->headers = curl_slist_append(data->headers, "User-Agent: PHP Yar Rpc-" PHP_YAR_VERSION);
+    + data->headers = curl_slist_append(data->headers, "Cookie: XDEBUG_SESSION=YAR;");
