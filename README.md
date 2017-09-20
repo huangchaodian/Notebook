@@ -10,7 +10,8 @@
 ## Phpstorm相关
 ``` bash
 remote debug 
-./pecl install xdebug-2.2.0
+export LC_ALL=C
+./pecl install xdebug-2.4.1
 [xdebug]
 zend_extension="php/lib/php/extensions/no-debug-non-zts-20100525/xdebug.so"
 xdebug.auto_trace = on
