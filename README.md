@@ -49,3 +49,19 @@ export XDEBUG_CONFIG="idekey=PHPSTORM"
     transports/curl.c
     data->headers = curl_slist_append(data->headers, "User-Agent: PHP Yar Rpc-" PHP_YAR_VERSION);
     + data->headers = curl_slist_append(data->headers, "Cookie: XDEBUG_SESSION=YAR;");
+### haproxy 
+``` bash
+    listen stats :9012  # Listen on localhost:9000
+        mode http
+        stats enable  # Enable stats page
+        stats hide-version  # Hide HAProxy version
+        stats realm Haproxy\ Statistics  # Title text for popup window
+        stats uri /haproxy_stats  # Stats URI
+    
+    listen webhealthcheck
+        bind 0.0.0.0:9013
+        mode tcp
+        maxconn 4086
+        server s1 10.18.10.23:80 check
+        server s2 10.18.5.10:80 check
+```
